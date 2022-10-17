@@ -15,7 +15,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('currency:save')->daily();
+//        $schedule->command('currency:save')->daily();
+        $schedule->command('currency:exist')->daily();
 
         // $schedule->command('inspire')->hourly();
     }
